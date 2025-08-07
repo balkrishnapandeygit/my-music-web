@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mini-music</title>
+    
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-icons">
+            <div class="logo"><img src="images/2nd.png" alt=""></div>
+            <div class="nav-icon home-btn"><img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt=""></div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="What do you want to play?" id="searchInput">
+            <div class="search-icon">🔍</div>
+        </div>
+
+        <div class="right-nav">
+            <div class="nav-links">
+                <a href="#" class="nav-link">Premium</a>
+                <a href="#" class="nav-link">Support</a>
+                <a href="#" class="nav-link">Download</a>
+            </div>
+            <div class="install-app">
+                <span class="install-icon">⬇️</span>
+                <span>Install App</span>
+            </div>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Sign up</a>
+                <a href="#" class="btn btn-primary">Log in</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">
+                    Your Library
+                    <div class="add-btn" id="addPlaylistBtn">+</div>
+                </div>
+
+                <div class="playlist-prompt">
+                    <h3>Create your first playlist</h3>
+                    <p>It's easy, we'll help you</p>
+                    <button class="create-playlist-btn" id="createPlaylistBtn">Create playlist</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Legal</a>
+                <a href="#">Safety & Privacy Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+                <a href="#">About Ads</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Cookies</a>
+
+                <div class="language-selector" id="languageSelector">
+                    <span class="globe-icon">🌐</span>
+                    <span>English</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Trending songs</h2>
+                    <a href="#" class="show-all">Show all</a>
+                </div>
+
+                <div class="cards-grid" id="trendingSongs">
+                    <div class="card song-card" data-song="love song">
+                        <div class="card-image gradient-1">
+                            <span class="music-icon"> <img
+                                    src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da842fcc7e9b41b94f4c290a302d"
+                                    width="220px" alt=""></span>
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class=" card-title">Love Song
+                        </div>
+                        <div class="card-subtitle">Bollwood , Punjabi love track</div>
+                    </div>
+
+                    <div class="card song-card" data-song="Sadabahar">
+                        <div class="card-image gradient-2">
+                            <div class="play-btn hidden">▶️</div>
+                            <span class="music-icon"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrPbFdpUqz-ZAFT497KSXlKl1mtXxyX16j0A&s"
+                                    width="220px" alt=""></span>
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+
+                        <div class="card-title">Old Bollywood Songs</div>
+                        <div class="card-subtitle">60s,70s,80s,90s Songs</div>
+                    </div>
+
+                    <div class="card song-card" data-song="punjabi hood">
+                        <div class="card-image gradient-3">
+                            <div class="play-btn hidden">▶️</div>
+                            <span class="music-icon"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemxdZfU3B1z368HKc0jpByQAqL5gjI5f6KQ&s"
+                                    width="220px" alt=""></span>
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="card-title">Punjabi Haryanvi</div>
+                        <div class="card-subtitle">Punjabi, Haryanvi track</div>
+                    </div>
+
+                    <div class="card song-card" data-song="hits">
+                        <div class="card-image gradient-4">
+                            <div class="play-btn hidden">▶️</div>
+                            <span class="music-icon"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgZpVUyMGlelyIVPdgk7lChjZMRyruQXoZg&s"
+                                    width="220px" alt=""></span>
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="card-title">Popular Hit</div>
+                        <div class="card-subtitle">Most listened, Songs 2025</div>
+                    </div>
+
+                    <div class="card song-card" data-song="English">
+                        <div class="card-image gradient-5">
+                            <div class="play-btn hidden">▶️</div>
+                            <span class="music-icon"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH-pjifyig_LxfnKrYtmDWQtX4CUpspGEdMg&s"
+                                    width="220px" alt=""></span>
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+
+                        <div class="card-title">English Songs</div>
+                        <div class="card-subtitle">Musician, Brand</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Popular artists</h2>
+                    <a href="#" class="show-all">Show all</a>
+                </div>
+
+                <div class="artists-grid" id="popularArtists">
+                    <div class="artist-card" data-artist="artist1">
+                        <div class="artist-image gradient-artist-1"><img
+                                src="https://yt3.googleusercontent.com/MXrBCqdPt67pKKieXDCmBhX5PsNzqEP7sqZDyyWtER1Z_GwbnU1mYkzpHeSNFHFvnxewJq6cawY=s900-c-k-c0x00ffffff-no-rj"
+                                alt="">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="artist-name">Kishor Kumar JI</div>
+                    </div>
+
+                    <div class="artist-card" data-artist="artist2">
+                        <div class="artist-image gradient-artist-2"><img
+                                src="https://w0.peakpx.com/wallpaper/527/944/HD-wallpaper-how-singer-arijit-singh-made-his-massive-inr-52-crore-net-worth-in-a-decade.jpg"
+                                alt="">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="artist-name">Arjit Singh</div>
+                    </div>
+
+                    <div class="artist-card" data-artist="artist3">
+                        <div class="artist-image gradient-artist-3"><img
+                                src="https://lh3.googleusercontent.com/u_YlAOSU7_M6mI6_4Xo0KIIwI_9pVCnLg0BrdLQsW-KENvVuvnvsq-cHhFrCiD9Ft48jqirgp_gWWwg=w544-h544-p-l90-rj"
+                                alt="">
+
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+
+                        <div class="artist-name"> K K</div>
+                    </div>
+
+                    <div class="artist-card" data-artist="artist4">
+                        <div class="artist-image gradient-artist-4"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2TTx0TZpEWWE7KoYjGic1oEeoyAOyfPienA&s"
+                                alt="">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="artist-name">Arman malik</div>
+                    </div>
+
+                    <div class="artist-card" data-artist="artist5">
+                        <div class="artist-image gradient-artist-5"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJn3UBRQHxDLXlmZ-mJLueNE5a4mM5he1wow&s"
+                                width="34px" height="34px" alt="">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="artist-name">Masoom Sharma</div>
+
+                    </div>
+
+
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="music-controls-bar">
+        <button id="prevSongBtn" class="control-btn"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="mainPlayPauseBtn" class="control-btn"><i class="fa-solid fa-play"></i></button>
+        <button id="nextSongBtn" class="control-btn"><i class="fa-solid fa-forward-step"></i></button>
+    </div>
+    <audio id="audio-player" controls style="display: none;"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
